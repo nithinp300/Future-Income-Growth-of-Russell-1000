@@ -6,6 +6,7 @@ Estimated the net income growth rate of Russell 1000 companies for next quarter.
 Data: The dataset we use is from ​QuickFS​. In all, there are 904101 records with 192 features.
 
 The six machine learning models are:
+
 **Support Vector Regression (SVR)**: SVR uses the same principles as the SVM for classification, with some minor differences to handle continuous data (label). We perform cross-validation using GridSearchCV to determine the best ‘kernel’ and ‘degree’ for SVR. The parameters differed by industry. According to our results, this model had a relatively higher accuracy among these six models.
 
 **Radius Neighbor Regression (RNR)**: RNR is based on neighbors within a fixed radius. The labels are determined by the labels of the nearest neighbors in the training set. The radius we used is 5.
